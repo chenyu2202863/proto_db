@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5517cc10-87af-4bf3-8bd6-501797421bf0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="c1cf2c6f-30db-4242-a05a-4f8fcf6ddcd7" name="Comment1">
+      <body>数据库连接层</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="4d46842f-4db6-4770-bc99-88ca5d0a6cee" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="e3ba0faf-a3fd-44d9-b2c0-027ce0d3a81f" name="Comment2">
+      <body>客户端调用接口层</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="f6fbeaf0-3d25-412f-a246-0a1c481684d4" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="1a971b26-1294-4461-b669-aba7368df320" name="Comment3">
+      <body>数据类型匹配</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="46033908-7a85-4406-b666-7b45fa8ad2f7" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="f6fbeaf0-3d25-412f-a246-0a1c481684d4" name="Engine">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ad29527a-ef42-4012-94af-fec934916067" direction="Forward">
+          <layerMoniker Id="46033908-7a85-4406-b666-7b45fa8ad2f7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="a83e102d-3aad-4cee-952f-b488bbdd498f" direction="Forward">
+          <layerMoniker Id="7ef6a895-a5d2-4ee6-af8a-c7505dce6488" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="46033908-7a85-4406-b666-7b45fa8ad2f7" name="构建SQL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="dc4f5c5b-04e8-424e-9416-9d56f50344ce" direction="Forward">
+          <layerMoniker Id="4d46842f-4db6-4770-bc99-88ca5d0a6cee" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="7ef6a895-a5d2-4ee6-af8a-c7505dce6488" name="数据解析">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8be5236f-7ed0-4824-a1f9-ac0c8cc530fa" direction="Forward">
+          <layerMoniker Id="4d46842f-4db6-4770-bc99-88ca5d0a6cee" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="4d46842f-4db6-4770-bc99-88ca5d0a6cee" name="ADO、OTL、DTL">
+      <description>数据库连接层</description>
+    </layer>
+  </layers>
+</layerModel>

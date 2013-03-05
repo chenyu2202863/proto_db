@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\db_engine">
+      <UniqueIdentifier>{63a6cba3-406a-4fd2-b83b-9a891c34f57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\db_engine\detail">
+      <UniqueIdentifier>{3215d597-e330-4edd-8bcf-06c2ba59558d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\engine.hpp">
+      <Filter>Header Files\db_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\helper.hpp">
+      <Filter>Header Files\db_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\detail\connection.hpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\detail\build_sql.hpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\detail\convertion_traits.hpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\detail\parse_recordset.hpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="db_engine\config.hpp">
+      <Filter>Header Files\db_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Program\Google\ProtoBuf\x.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_engine\engine.cpp">
+      <Filter>Header Files\db_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="db_engine\helper.cpp">
+      <Filter>Header Files\db_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="db_engine\detail\connection.cpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="db_engine\detail\build_sql.cpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="db_engine\detail\parse_recordset.cpp">
+      <Filter>Header Files\db_engine\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Program\Google\ProtoBuf\x.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

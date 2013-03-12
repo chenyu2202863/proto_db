@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proto_db", "db\db.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "generate_proto", "generate_proto\generate_proto.vcxproj", "{582412A5-1418-4033-BFF1-86D7682DB510}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linq", "linq\linq.vcxproj", "{1B6E7A1C-98B1-4F45-8977-83EEAA8E13D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{582412A5-1418-4033-BFF1-86D7682DB510}.Debug|Win32.Build.0 = Debug|Win32
 		{582412A5-1418-4033-BFF1-86D7682DB510}.Release|Win32.ActiveCfg = Release|Win32
 		{582412A5-1418-4033-BFF1-86D7682DB510}.Release|Win32.Build.0 = Release|Win32
+		{1B6E7A1C-98B1-4F45-8977-83EEAA8E13D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B6E7A1C-98B1-4F45-8977-83EEAA8E13D1}.Debug|Win32.Build.0 = Debug|Win32
+		{1B6E7A1C-98B1-4F45-8977-83EEAA8E13D1}.Release|Win32.ActiveCfg = Release|Win32
+		{1B6E7A1C-98B1-4F45-8977-83EEAA8E13D1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

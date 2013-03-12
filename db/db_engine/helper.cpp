@@ -1,5 +1,8 @@
 #include "helper.hpp"
 
+#include <cassert>
+
+
 namespace proto { 
 
 	// -- where

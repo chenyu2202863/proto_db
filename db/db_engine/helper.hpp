@@ -6,8 +6,9 @@
 #include <sstream>
 #include <cstdint>
 #include <memory>
+#include <vector>
 
-#include <google/protobuf/message.h>
+//#include <google/protobuf/message.h>
 
 
 namespace proto { 
@@ -17,6 +18,9 @@ namespace proto {
 	class columns_t
 	{
 		std::ostringstream os_;
+
+	public:
+		enum { is_sql_object = 1 };
 
 	public:
 		explicit columns_t(const std::string &col)
@@ -84,6 +88,9 @@ namespace proto {
 		std::ostringstream os_;
 
 	public:
+		enum { is_sql_object = 1 };
+
+	public:
 		all_columns_t()
 		{
 			os_ << " * "; 
@@ -108,6 +115,9 @@ namespace proto {
 	class where_t
 	{
 		std::ostringstream os_;
+
+	public:
+		enum { is_sql_object = 1 };
 
 	public:
 		where_t();
@@ -153,6 +163,9 @@ namespace proto {
 		std::ostringstream os_;
 
 	public:
+		enum { is_sql_object = 1 };
+
+	public:
 		explicit order_by_t(const std::string &msg);
 
 	private:
@@ -175,6 +188,9 @@ namespace proto {
 		std::uint32_t num_;
 
 	public:
+		enum { is_sql_object = 1 };
+
+	public:
 		explicit limit_t(std::uint32_t n);
 
 	private:
@@ -194,6 +210,9 @@ namespace proto {
 	class into_t
 	{
 		std::ostringstream os_;
+
+	public:
+		enum { is_sql_object = 1 };
 
 		template < typename T >
 		struct into_impl_t
@@ -229,9 +248,42 @@ namespace proto {
 
 	};
 
+
+	template < typename TableT >
+	class from_t
+	{
+		std::ostringstream os_;
+
+	public:
+		enum { is_sql_object = 1 };
+
+	public:
+		from_t()
+		{
+			TableT msg;
+			os_ << msg.GetTypeName();
+		}
+		~from_t()
+		{}
+
+	private:
+		from_t(const from_t &);
+		from_t &operator=(const from_t &);
+
+	public:
+		std::string to_string() const
+		{
+			return os_.str();
+		}
+	};
+
+
 	class select_t
 	{
 		std::ostringstream os_;
+
+	public:
+		enum { is_sql_object = 1 };
 
 	public:
 		select_t();
@@ -245,6 +297,7 @@ namespace proto {
 		template < typename T >
 		select_t &operator<<(const T &val)
 		{
+			static_assert(T::is_sql_object, "T must sql object"); 
 			os_ << val.to_string();
 
 			return *this;
@@ -263,13 +316,6 @@ namespace proto {
 			return os_.str();
 		}
 	};
-
-	class insert_t;
-
-	class update_t;
-
-	class delete_t;
-
 
 
 }

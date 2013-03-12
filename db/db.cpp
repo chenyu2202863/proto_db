@@ -84,8 +84,12 @@ int _tmain(int argc, _TCHAR* argv[])
 		std::vector<person_ptr> persons;
 
 		select_t select;
-		select << all_columns_t() << (where_t("id") == 1 && where_t("name") == "test name"), into_t(persons);
+		select << all_columns_t() 
+			<< from_t<Person>()
+			<< (where_t("id") == 1 && where_t("name") == "test name"), 
+			into_t(persons);
 
+		std::cout << select.to_string() << std::endl;
 	}
 
 	query.stop();

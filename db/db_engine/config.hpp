@@ -3,7 +3,7 @@
 
 #include <google/protobuf/message.h>
 #include <functional>
-
+#include <memory>
 
 namespace proto {
 

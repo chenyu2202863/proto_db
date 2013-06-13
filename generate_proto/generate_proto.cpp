@@ -15,13 +15,13 @@
 #include <set>
 #include <iterator>
 
-#include <sql_database.h>
-#include <sql_error.h>
+#include "include/ado/sql_database.h"
+#include "include/ado/sql_error.h"
 
-#include <extend_stl/string/algorithm.hpp>
-#include <utility/utility.hpp>
-#include <win32\system\system_helper.hpp>
-#include <win32\file_system\file_helper.hpp>
+#include "include/extend_stl/string/algorithm.hpp"
+#include "include/utility/utility.hpp"
+#include "include/win32/system/system_helper.hpp"
+#include "include/win32/file_system/file_helper.hpp"
 
 struct column_info_t
 {

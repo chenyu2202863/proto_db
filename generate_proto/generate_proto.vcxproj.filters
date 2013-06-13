@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{1071304e-9e0e-41e5-98aa-52725ae1cdf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ado">
+      <UniqueIdentifier>{c9f5dabe-7271-4e03-bce9-db918ca7fb10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -24,6 +30,24 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ado\sql_database.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ado\sql_error.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ado\sql_helper.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ado\sql_operate.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ado\sql_prepare.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ado\sql_recordset.h">
+      <Filter>include\ado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -31,6 +55,15 @@
     </ClCompile>
     <ClCompile Include="generate_proto.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ado\sql_database.cpp">
+      <Filter>include\ado</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ado\sql_error.cpp">
+      <Filter>include\ado</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ado\sql_recordset.cpp">
+      <Filter>include\ado</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

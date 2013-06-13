@@ -54,7 +54,7 @@
     <ClInclude Include="db_engine\config.hpp">
       <Filter>Header Files\db_engine</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Program\Google\ProtoBuf\x.pb.h">
+    <ClInclude Include="x.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -80,7 +80,7 @@
     <ClCompile Include="db_engine\detail\parse_recordset.cpp">
       <Filter>Header Files\db_engine\detail</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Program\Google\ProtoBuf\x.pb.cc">
+    <ClCompile Include="x.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

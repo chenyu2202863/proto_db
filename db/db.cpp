@@ -2,12 +2,15 @@
 //
 
 #include "stdafx.h"
-#include "db_engine.hpp"
-#include "x.pb.h"
+
 #include <iostream>
 
+#include "db_engine.hpp"
+#include "x.pb.h"
 
-#pragma comment(lib, "libprotobuf.lib")
+
+
+#pragma comment(lib, "libprotobuf_d.lib")
 
 int _tmain(int argc, _TCHAR* argv[])
 {
